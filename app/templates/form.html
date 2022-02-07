@@ -20,7 +20,12 @@
     <form name="form" id="form" action="{% if db%}/update/{{db.id}}/{% else %}/create/{% endif %}" method="post">
         {% csrf_token %}
         <div class="form-group mt-4">Paciente: {{form.paciente}}</div>
+        <div class="form-group mt-4">RH: {{form.rh}}</div>
+        <div class="form-group mt-4">Setor: {{form.setor}}</div>
         <div class="form-group mt-4">Medicamento: {{form.medicamento}}</div>
+        <div class="form-group mt-4">Dose: {{form.dose}}</div>
+        <div class="form-group mt-4">Unidade: {{form.unidade}}</div>
+        <div class="form-group mt-4">Frequência: {{form.frequencia}}</div>
         <div class="form-group mt-4">Duração: {{form.duracao}}</div>
         <input type="submit" class="btn btn-success mt-4" value="Salvar">
     </form>

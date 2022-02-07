@@ -6,4 +6,4 @@ from app.models import Tratamentos
 class TratametosForm(ModelForm):
     class Meta:
         model = Tratamentos
-        fields = ['paciente', 'medicamento', 'duracao']
+        fields = ['paciente', 'rh', 'setor', 'medicamento', 'dose', 'unidade', 'frequencia', 'duracao']
